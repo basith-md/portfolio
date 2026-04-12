@@ -158,9 +158,10 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 600; li
 
 /* small container to hold hero CTA buttons if needed */
 .hero-cta { 
-    display: inline-flex; 
+    display: flex; 
     gap: 12px; 
     align-items: center; 
+    justify-content: center;
 }
 .hero-cta .btn {
     min-width: 180px;
@@ -174,6 +175,9 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 600; li
 /* About */
 .about-content { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
 .about-text p { margin-bottom:1.5rem; font-size:1rem; color:var(--muted); line-height:1.7; }
+.about-text ul { list-style: none; margin: 2rem 0 2rem 0; padding: 0; }
+.about-text li { padding: 1rem 0 1rem 2.2rem; position: relative; font-size: 1rem; color: var(--text); line-height: 1.7; margin-bottom: 1rem; }
+.about-text li:before { content: '◆'; position: absolute; left: 0; color: var(--accent-2); font-size: 0.8rem; }
 .about-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:2rem; }
 .stat-item { text-align:center; padding:2rem 1.5rem; background:var(--panel); border:1px solid var(--border); transition:all .3s ease; }
 .stat-item:hover { border-color:var(--accent-2); }
