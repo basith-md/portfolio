@@ -44,15 +44,15 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <h1 class="hero-title">
-                Hello, I'm <span class="highlight">Basith Mohamed</span>
-            </h1>
-            <p class="hero-role">AI &amp; Analytics Engineer</p>
+        <div class="hero-content">
+            <p class="hero-eyebrow">AI &amp; Analytics Engineer · NYC</p>
+            <h1 class="hero-title">Basith Mohamed</h1>
             <p class="hero-description">I build systems that catch what's wrong and decide what to do about it.</p>
-            <p class="hero-origin">Controls engineer by training, data engineer by trade, building AI now.</p>
-            <p class="hero-loop">Sense <span>→</span> Detect <span>→</span> Decide <span>→</span> Act</p>
+            <p class="hero-origin">Data platforms and anomaly detection for Fortune 500 finance teams. Now building AI that acts on what the data says.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="hero-btn hero-btn-primary">See my work</a>
+                <a href="#contact" class="hero-btn">Get in touch</a>
+            </div>
         </div>
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
@@ -68,16 +68,16 @@
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right" data-aos-delay="200">
                     <p>
-                        I trained as a controls engineer, where everything is a feedback loop: measure the system, notice when it drifts, correct it. I've been building that loop ever since, on different systems.
+                        I'm an analytics engineer. For three years I've built the data platforms and detection systems that tell teams when something is off: finance controls for a Fortune 500 FMCG company at Thorogood, anomaly detection on 30+ business KPIs, and instrument automation at Lal PathLabs that cut downtime 15% across a network serving 26.7 million patients a year.
                     </p>
                     <p>
-                        At SenseGrass it was rover telemetry. At Lal PathLabs it was lab instruments across a network serving 26.7 million patients a year, where my automation cut downtime 15%. At Thorogood it was finance controls for a Fortune 500 FMCG company in 93 countries, plus anomaly detection on 30+ KPIs for 80+ teams.
+                        My master's in decision analytics at UMass Amherst added the step most systems skip: turning what the data says into a decision someone can act on. Now I'm building AI that closes that gap, from agents that check their evidence before acting to a robot arm that adjusts to every book.
                     </p>
                     <p>
-                        My master's in decision analytics at UMass Amherst added the step most systems skip: turning what the data says into a decision someone can act on. Now I'm building AI that runs the whole loop, from agents that check their evidence before acting to a robot arm that adjusts to every book.
+                        It started with controls engineering at NIT Trichy, where everything is a feedback loop: measure the system, notice when it drifts, correct it. That's still how I approach data, and it's how I first worked with real sensor data, modeling rover telemetry at SenseGrass.
                     </p>
                     <p>
-                        Based in NYC and open to analytics and AI roles. I'm most drawn to work in sustainability, fairness and responsible AI.
+                        Based in NYC and open to analytics and AI roles. Outside work, I care about sustainability, fairness and responsible AI.
                     </p>
                 </div>
             <div class="about-image" data-aos="fade-left" data-aos-delay="400">
@@ -147,7 +147,7 @@
                         <div class="project-placeholder"><i class="fas fa-shield-halved"></i></div>
                     </div>
                     <div class="project-content">
-                        <p class="project-kicker">Detect · Data engineering &amp; BI</p>
+                        <p class="project-kicker">Data engineering &amp; BI</p>
                         <h3 class="project-title">Audit Control Analytics</h3>
                         <p class="project-description">
                             A finance controls platform for a Fortune 500 FMCG company, used in 93 countries. I led one of its four streams, building pipelines across 20+ sources in Databricks, Azure Data Factory and Delta Lake to surface data quality issues and operational risk. Two automations I built cut the monthly refresh time by 35%.
@@ -166,7 +166,7 @@
                         <div class="project-placeholder"><i class="fas fa-bell"></i></div>
                     </div>
                     <div class="project-content">
-                        <p class="project-kicker">Detect · Detection to decision</p>
+                        <p class="project-kicker">Detection to decision</p>
                         <h3 class="project-title">KPI Anomaly Detection</h3>
                         <p class="project-description">
                             Automated anomaly detection across 30+ business KPIs, built on Snowflake and dbt with statistical scoring. Alerts and NLP-generated insight summaries reached 80+ global teams.
@@ -185,7 +185,7 @@
                         <div class="project-placeholder"><i class="fas fa-flask"></i></div>
                     </div>
                     <div class="project-content">
-                        <p class="project-kicker">Sense · Shipping a product</p>
+                        <p class="project-kicker">Shipping a product</p>
                         <h3 class="project-title">Lab Instrument Automation</h3>
                         <p class="project-description">
                             An end-to-end automation product in C#/.NET for a diagnostics network serving 26.7M patients a year. It cut global instrument downtime by 15%, and the interface automation reduced technician workload by 90%.
@@ -216,7 +216,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <p class="project-kicker">Decide · ML product, end to end</p>
+                        <p class="project-kicker">ML product, end to end</p>
                         <h3 class="project-title">Tabular Autopilot</h3>
                         <p class="project-description">
                             Drop in a CSV and get a full analysis, from cleaning and feature engineering to model comparison and diagnostics. The Python engine runs entirely in the browser via WebAssembly, so the data never leaves your machine. Best results: R² 0.825 on California Housing and 0.838 ROC-AUC on Titanic.
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <p class="project-kicker">Decide · AI agents &amp; decisions under uncertainty</p>
+                        <p class="project-kicker">AI agents &amp; decisions under uncertainty</p>
                         <h3 class="project-title">Robologue</h3>
                         <p class="project-description">
                             An AI agent that remembers unresolved mistakes across a long task and learns which evidence to check before marking a step done, with memory stored in MongoDB Atlas.
@@ -268,7 +268,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <p class="project-kicker">Act · Computer vision &amp; closed-loop control</p>
+                        <p class="project-kicker">Computer vision &amp; closed-loop control</p>
                         <h3 class="project-title">Bookworm</h3>
                         <p class="project-description">
                             A robot arm that turns real book pages, then reads them aloud or scans them into a searchable PDF without damaging the book. I built the calibration, the touch-based book model and the adaptive page-flip path.
@@ -297,7 +297,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <p class="project-kicker">Detect · Trust systems &amp; cryptography</p>
+                        <p class="project-kicker">Trust systems &amp; cryptography</p>
                         <h3 class="project-title">Sweeesh</h3>
                         <p class="project-description">
                             Resumes where every claim can be verified without a phone call, because each one is signed up a chain of trust to a root registry. I built and deployed the verifiable-credential demo.
