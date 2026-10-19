@@ -986,3 +986,4 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 600; li
 .projects-grid.two-up > .project-card { flex-basis: calc((100% - 2.5rem) / 2); }
 @media (max-width: 1050px) { .projects-grid > .project-card { flex-basis: calc((100% - 2.5rem) / 2); } }
 @media (max-width: 700px) { .projects-grid > .project-card, .projects-grid.two-up > .project-card { flex-basis: 100%; } }
+.xp-subheading { margin-top: 2.5rem; }
