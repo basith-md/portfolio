@@ -979,3 +979,10 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 600; li
 
 /* Wide images shown whole instead of cropped to the tall card */
 .project-image img.fit-whole { object-fit: contain; background: #fff; padding: 1rem; }
+
+/* Project grids: centered rows so a short last row looks intentional; Industry work is 2-up */
+.projects-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; }
+.projects-grid > .project-card { flex: 0 1 calc((100% - 5rem) / 3); min-width: 0; }
+.projects-grid.two-up > .project-card { flex-basis: calc((100% - 2.5rem) / 2); }
+@media (max-width: 1050px) { .projects-grid > .project-card { flex-basis: calc((100% - 2.5rem) / 2); } }
+@media (max-width: 700px) { .projects-grid > .project-card, .projects-grid.two-up > .project-card { flex-basis: 100%; } }
