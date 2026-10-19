@@ -976,3 +976,6 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; font-weight: 600; li
 .project-kicker { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-blue); margin-bottom: .5rem; }
 .xp-heading, .xp-item h4, .projects-group { font-family: 'Inter', sans-serif; }
 @media (min-width: 1100px) { .skills-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* Wide images shown whole instead of cropped to the tall card */
+.project-image img.fit-whole { object-fit: contain; background: #fff; padding: 1rem; }
