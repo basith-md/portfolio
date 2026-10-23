@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basith Mohamed</title>
+    <meta name="description" content="Basith Mohamed, New York City. Startup Weekend winner, hackathon winner, looking to build a company.">
+    <meta property="og:title" content="Basith Mohamed">
+    <meta property="og:description" content="Basith Mohamed, New York City.">
+    <meta property="og:image" content="https://basith-md.github.io/portfolio/assets/images/profile.jpg">
+    <meta property="og:url" content="https://basith-md.github.io/portfolio/wiki/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+<div class="page">
+
+    <div class="top">
+        <span>New York City</span>
+        <nav>
+            <a href="#story">Story</a>
+            <a href="#work">The work</a>
+            <a href="#record">Record</a>
+            <a href="#contact">Contact</a>
+            <a href="gallery.html">Photos</a>
+        </nav>
+    </div>
+
+    <header class="title">
+        <h1>Basith Mohamed</h1>
+    </header>
+
+    <h2 id="story">Story</h2>
+    <div class="story">
+        <aside class="facts">
+            <a class="pic" href="gallery.html"><img src="../assets/images/profile.jpg" alt="Basith Mohamed"><span>More photos</span></a>
+        </aside>
+
+        <p>I've been starting things since 2017, when I led a team to win Techstars Startup Weekend Trichy with The Cocoon, a shade that mounts on a bicycle.</p>
+        <p>Then I went inside companies to learn how things ship. At Lal PathLabs I built automation that cut instrument downtime 15% and technician workload 90%. I also told the CEO I could plan a sample-sorting bulk loader in-house, and delivered the plan within a month. At Thorogood I led one of four workstreams on a finance platform for a Fortune 500 company and built anomaly detection on 30+ KPIs.</p>
+        <p>At UMass Amherst I studied decision analytics and went back to building from zero. Sweeesh won NYU's Trust in the Hiring Funnel track, and Bookworm took 3rd at the Viam hackathon. Other builds include an agent that learns which evidence to check, an ML tool that runs entirely in the browser, an oil-field toolkit study, and a phone case that deploys dampers when dropped.</p>
+        <p>It all comes from controls engineering at NIT Trichy: measure the system, notice when it drifts, correct it. I want to build companies on that idea, with software and machines that notice what's wrong and act on it.</p>
+        <p>Based in NYC. I care about sustainability, fairness and responsible AI.</p>
+    </div>
+
+    <h2 id="work">The work</h2>
+    <ol class="refs">
+        <li id="r1">
+            <b>The Cocoon</b><span class="kind">Product design &amp; team lead</span>
+            <p>A modular shade that mounts on a bicycle, so students can ride across campus in sun or rain. I led the team: we designed it in CAD, surveyed students on demand, and planned a two-tier launch in canvas and nylon. <span class="res">Winner, Techstars Startup Weekend Trichy 2017.</span></p>
+            <p class="meta">Team leadership, product design, CAD, market research, pitching</p>
+        </li>
+        <li id="r2">
+            <b>Lab Instrument Automation</b><span class="kind">Lal PathLabs</span>
+            <p>An end-to-end automation product in C#/.NET for a diagnostics network serving 26.7M patients a year. It cut global instrument downtime by 15%, and the interface automation reduced technician workload by 90%.</p>
+            <p class="meta">C#, .NET, SQL, Python</p>
+        </li>
+        <li id="r3">
+            <b>Sample-Sorting Bulk Loader</b><span class="kind">Lal PathLabs</span>
+            <p>I challenged the CEO of Lal PathLabs, saying I could plan this machine in-house, and delivered the plan within a month. A project plan and design study for a machine that reads each sample tube's barcode and cap color and sorts it into the right bin. Scoped customer needs and throughput targets, specified the sensors and controls, and designed two CAD concepts, linear and rotary.</p>
+            <p class="meta">Project planning, product development, CAD, embedded systems<a href="https://github.com/basith-md/bulk-loader-design-study" target="_blank" rel="noopener">code</a></p>
+        </li>
+        <li id="r4">
+            <b>Audit Control Analytics</b><span class="kind">Thorogood</span>
+            <p>A finance controls platform for a Fortune 500 FMCG company. I led one of its four streams, building pipelines across 20+ sources in Databricks, Azure Data Factory and Delta Lake to surface data quality issues and operational risk. Two automations I built cut the monthly refresh time by 35%.</p>
+            <p class="meta">Databricks, Azure Data Factory, Delta Lake, Azure Analysis Services</p>
+        </li>
+        <li id="r5">
+            <b>KPI Anomaly Detection</b><span class="kind">Thorogood</span>
+            <p>Automated anomaly detection across 30+ business KPIs, built on Snowflake and dbt with statistical scoring. Alerts and NLP-generated insight summaries reached teams across the business.</p>
+            <p class="meta">Snowflake, dbt, statistics, NLP</p>
+        </li>
+        <li id="r6">
+            <b>Sweeesh</b><span class="kind">Trust systems &amp; cryptography</span>
+            <p>Resumes where every claim can be verified without a phone call, because each one is signed up a chain of trust to a root registry. I built and deployed the verifiable-credential demo, and pitched it at the Minute Pitch startup competition at UMass Amherst. <span class="res">Winner, Trust in the Hiring Funnel track, NYU.</span></p>
+            <p class="meta">JavaScript, Python, verifiable credentials, cryptography<a href="https://github.com/varunsahni18/Sweeesh" target="_blank" rel="noopener">code</a><a href="https://sweeesh.vercel.app" target="_blank" rel="noopener">live</a></p>
+        </li>
+        <li id="r7">
+            <b>Bookworm</b><span class="kind">Computer vision &amp; closed-loop control</span>
+            <p>A robot arm that turns real book pages, then reads them aloud or scans them into a searchable PDF without damaging the book. I built the calibration, the touch-based book model and the adaptive page-flip path. <span class="res">3rd place, Viam "Code that Moves" Hackathon.</span></p>
+            <p class="meta">Python, robotics, Viam, computer vision, OCR<a href="https://github.com/shravanthi-m/Bookworm" target="_blank" rel="noopener">code</a></p>
+        </li>
+        <li id="r8">
+            <b>Robologue</b><span class="kind">AI agents · demo</span>
+            <p>An AI agent that remembers unresolved mistakes across a long task and learns which evidence to check before marking a step done, with memory stored in MongoDB Atlas.</p>
+            <p class="meta">Python, AI agents, MongoDB Atlas, evaluation<a href="https://github.com/shravanthi-m/Robologue" target="_blank" rel="noopener">code</a><a href="https://robologue.vercel.app" target="_blank" rel="noopener">live</a></p>
+        </li>
+        <li id="r9">
+            <b>Tabular Autopilot</b><span class="kind">ML product · demo</span>
+            <p>Drop in a CSV and get a full analysis, from cleaning and feature engineering to model comparison and diagnostics. The Python engine runs entirely in the browser via WebAssembly, so the data never leaves your machine. Best results: R² 0.825 on California Housing and 0.838 ROC-AUC on Titanic.</p>
+            <p class="meta">Python, scikit-learn, WebAssembly, Pyodide<a href="https://github.com/basith-md/tabular-autopilot" target="_blank" rel="noopener">code</a><a href="https://basith-md.github.io/tabular-autopilot/" target="_blank" rel="noopener">live</a></p>
+        </li>
+        <li id="r10">
+            <b>OnSite Toolkit</b><span class="kind">Project management &amp; planning</span>
+            <p>A project management study for a PDO (Petroleum Development Oman) competition: scoping, planning and prototyping a phone toolkit for oil-field technicians. It pulls tables and images out of 40-page equipment datasheets into a zone, process, equipment and component hierarchy, so a technician can pin just the values they need to a personal dashboard, with safety checklists and warnings alongside.</p>
+            <p class="meta">Project planning, table extraction, dashboards, mobile, oil &amp; gas</p>
+        </li>
+        <li id="r11">
+            <b>Passive Free-Fall Detector</b><span class="kind">Mechatronics &amp; IP</span>
+            <p>A phone case that deploys dampers when dropped, triggered by an unpowered mechanical 3-axis switch instead of an accelerometer and microcontroller. Drop tests with a phone's accelerometer set the targets: release within 0.5 s, with the sensor at the center of mass.</p>
+            <p class="meta">CAD, sensors, mechatronics, patent review<a href="https://github.com/basith-md/passive-free-fall-detector" target="_blank" rel="noopener">code</a></p>
+        </li>
+    </ol>
+
+    <h2 id="record">Record</h2>
+    <h3>Experience</h3>
+    <ul class="rec">
+        <li><span class="when">2022 – 2024 · Bengaluru</span><b>Data &amp; Analytics Engineer, Thorogood Associates.</b> Led one of four streams of a finance controls platform for a Fortune 500 FMCG company. Built anomaly detection on 30+ KPIs for global teams. Received the Passion and Star awards.</li>
+        <li><span class="when">2021 – 2022 · New Delhi</span><b>Business Process Analyst, Lal PathLabs.</b> Built automation systems that cut instrument downtime 15% and technician workload 90% across a diagnostics network serving 26.7M patients a year. Challenged the CEO that I could plan a sample-sorting bulk loader in-house, and delivered the plan within a month.</li>
+    </ul>
+    <h3>Internships &amp; part-time</h3>
+    <ul class="rec">
+        <li><span class="when">Oct 2024 – May 2025 · Amherst, MA</span><b>Digital Media Lab Associate (Part-Time), UMass Libraries.</b> Ran day-to-day 3D printing operations, and built and optimized lab workflows with Google Apps Script.</li>
+        <li><span class="when">2020 · New Delhi</span><b>Robotics Intern, SenseGrass.</b> Modeled faulty telemetry from an agricultural soil-sampling rover.</li>
+        <li><span class="when">May – Jul 2018 · Muscat, Oman</span><b>Instrumentation &amp; Control Systems Intern, I-Park Automation.</b> Developed control loops for an automated car parking system.</li>
+    </ul>
+    <h3>Education</h3>
+    <ul class="rec">
+        <li><span class="when">2024 – 2026</span><b>M.S. Engineering Management, Decision Analytics.</b> University of Massachusetts Amherst · GPA 3.94</li>
+        <li><span class="when">2017 – 2021</span><b>Bachelor's, Instrumentation &amp; Control Engineering.</b> NIT Tiruchirappalli · Final-year project: <a href="https://github.com/basith-md/Corticomuscular-Coherence-Analysis-Using-Wavelet-Coherence-Method-Based-On-Leg-Movements" target="_blank" rel="noopener">brain–muscle signal coherence during leg movement</a></li>
+    </ul>
+    <h3>What I can do alone</h3>
+    <dl class="skills">
+        <dt>Product</dt><dd>Scoping · customer surveys · project plans · pitching · leading a team</dd>
+        <dt>Hardware</dt><dd>CAD · Arduino · sensors · embedded systems and controls</dd>
+        <dt>Software</dt><dd>JavaScript, Python, C#/.NET · WebAssembly (Pyodide) · Vercel, GitHub Pages</dd>
+        <dt>Data &amp; AI</dt><dd>SQL, Scala, R · Databricks, Snowflake, dbt, Power BI · scikit-learn · AI agents · computer vision and OCR · NLP · MongoDB Atlas</dd>
+    </dl>
+
+    <h2 id="contact">Contact</h2>
+    <div class="contact">
+        <p>I'm looking for the next company to build or join. If you're working on a problem where something has to notice what's wrong and act on it, or you need someone who ships, reach out.</p>
+        <ul>
+            <li><a href="mailto:Basithsmohd+3@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/basith-mohamed/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/basith-md" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <span>&copy; 2026 Basith Mohamed</span>
+        <span>New York City</span>
+    </footer>
+
+</div>
+</body>
+</html>
