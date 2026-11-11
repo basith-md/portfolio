@@ -40,13 +40,25 @@
 
         <p>I've been starting things since 2017, when I led a team to win Techstars Startup Weekend Trichy with The Cocoon, a shade that mounts on a bicycle.</p>
         <p>Then I went inside companies to learn how things ship. At Lal PathLabs I built automation that cut instrument downtime 15% and technician workload 90%. I also told the CEO I could plan a sample-sorting bulk loader in-house, and delivered the plan within a month. At Thorogood I led one of four workstreams on a finance platform for a Fortune 500 company and built anomaly detection on 30+ KPIs.</p>
-        <p>At UMass Amherst I studied decision analytics and went back to building from zero. Sweeesh won NYU's Trust in the Hiring Funnel track, and Bookworm took 3rd at the Viam hackathon. Other builds include an agent that learns which evidence to check, an ML tool that runs entirely in the browser, an oil-field toolkit study, and a phone case that deploys dampers when dropped.</p>
+        <p>At UMass Amherst I studied decision analytics and went back to building from zero. Sweeesh won NYU's Trust in the Hiring Funnel track, and Bookworm took 3rd at the Viam hackathon. Other builds include a map of what it costs to get around New York, a map of the money behind the 2026 midterms, an agent that learns which evidence to check, an ML tool that runs entirely in the browser, an oil-field toolkit study, and a phone case that deploys dampers when dropped.</p>
         <p>It all comes from controls engineering at NIT Trichy: measure the system, notice when it drifts, correct it. I want to build companies on that idea, with software and machines that notice what's wrong and act on it.</p>
         <p>Based in NYC. I care about sustainability, fairness and responsible AI.</p>
     </div>
 
     <h2 id="work">The work</h2>
     <ol class="refs">
+        <li id="r12">
+            <b>Reach NYC</b><span class="kind">Maps &amp; routing</span>
+            <figure class="thumb"><a href="https://reach-nyc.vercel.app" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/reach-nyc.png" alt="Reach NYC: time and money budget controls over a map of New York City" loading="lazy"></a></figure>
+            <p>Drop a pin anywhere in New York City and see everywhere you can reach within a time or money budget, with each of 46,792 hexagons coloured by the cheapest way there. It mixes subway, buses, regional rail, ferries, Citi Bike, taxis and Uber, with real fares including OMNY's weekly cap. All the routing runs in the browser, on a RAPTOR search over the MTA timetables.</p>
+            <p class="meta">TypeScript, Python, GTFS, H3, Web Workers<a href="https://github.com/basith-md/reach-nyc" target="_blank" rel="noopener">code</a><a href="https://reach-nyc.vercel.app" target="_blank" rel="noopener">live</a></p>
+        </li>
+        <li id="r13">
+            <b>2026 Midterm Money Map</b><span class="kind">Data visualization</span>
+            <figure class="thumb"><a href="https://basith-md.github.io/VoterDataPub/" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/midterm-money.png" alt="Map of the money spent to elect each 2026 Senate winner, by state" loading="lazy"></a></figure>
+            <p>An interactive map of the money behind all 470 U.S. Senate and House races in 2026: what it cost to elect each winner, the spend per vote, and whether outspending the opponent moved voters compared with the 2024 presidential result. A Python pipeline pulls spending from the FEC's OpenFEC API, and the page is plain JavaScript with D3.</p>
+            <p class="meta">Python, D3, OpenFEC API, data visualization<a href="https://github.com/basith-md/VoterDataPub" target="_blank" rel="noopener">code</a><a href="https://basith-md.github.io/VoterDataPub/" target="_blank" rel="noopener">live</a></p>
+        </li>
         <li id="r1">
             <b>The Cocoon</b><span class="kind">Product design &amp; team lead</span>
             <figure class="thumb"><img src="../assets/images/cocoon.jpg" alt="CAD render of a bicycle with the Cocoon shade open" loading="lazy"></figure>
@@ -79,7 +91,7 @@
         </li>
         <li id="r6">
             <b>Sweeesh</b><span class="kind">Trust systems &amp; cryptography</span>
-            <figure class="thumb"><img src="../assets/images/sweeesh.png" alt="Sweeesh trust graph around a verified resume" loading="lazy"></figure>
+            <figure class="thumb"><a href="https://sweeesh.vercel.app" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/sweeesh.png" alt="Sweeesh trust graph around a verified resume" loading="lazy"></a></figure>
             <p>Resumes where every claim can be verified without a phone call, because each one is signed up a chain of trust to a root registry. I built and deployed the verifiable-credential demo, and pitched it at the Minute Pitch startup competition at UMass Amherst. <span class="res">Winner, Trust in the Hiring Funnel track, NYU.</span></p>
             <p class="meta">JavaScript, Python, verifiable credentials, cryptography<a href="https://github.com/varunsahni18/Sweeesh" target="_blank" rel="noopener">code</a><a href="https://sweeesh.vercel.app" target="_blank" rel="noopener">live</a></p>
         </li>
@@ -91,13 +103,13 @@
         </li>
         <li id="r8">
             <b>Robologue</b><span class="kind">AI agents · demo</span>
-            <figure class="thumb"><img src="../assets/images/robologue.png" alt="Robologue decision replay: assembly video with each checkpoint's verdict" loading="lazy"></figure>
+            <figure class="thumb"><a href="https://robologue.vercel.app" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/robologue.png" alt="Robologue decision replay: assembly video with each checkpoint's verdict" loading="lazy"></a></figure>
             <p>An AI agent that remembers unresolved mistakes across a long task and learns which evidence to check before marking a step done, with memory stored in MongoDB Atlas.</p>
             <p class="meta">Python, AI agents, MongoDB Atlas, evaluation<a href="https://github.com/shravanthi-m/Robologue" target="_blank" rel="noopener">code</a><a href="https://robologue.vercel.app" target="_blank" rel="noopener">live</a></p>
         </li>
         <li id="r9">
             <b>Tabular Autopilot</b><span class="kind">ML product · demo</span>
-            <figure class="thumb"><img src="../assets/images/project3.jpg" alt="Tabular Autopilot" loading="lazy"></figure>
+            <figure class="thumb"><a href="https://basith-md.github.io/tabular-autopilot/" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/project3.jpg" alt="Tabular Autopilot" loading="lazy"></a></figure>
             <p>Drop in a CSV and get a full analysis, from cleaning and feature engineering to model comparison and diagnostics. The Python engine runs entirely in the browser via WebAssembly, so the data never leaves your machine. Best results: R² 0.825 on California Housing and 0.838 ROC-AUC on Titanic.</p>
             <p class="meta">Python, scikit-learn, WebAssembly, Pyodide<a href="https://github.com/basith-md/tabular-autopilot" target="_blank" rel="noopener">code</a><a href="https://basith-md.github.io/tabular-autopilot/" target="_blank" rel="noopener">live</a></p>
         </li>
