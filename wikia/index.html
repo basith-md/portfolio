@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basith Mohamed · Analytics</title>
+    <meta name="description" content="Basith Mohamed, analytics engineer in New York City. Data platforms, anomaly detection, and analysis that ends in a decision.">
+    <meta property="og:title" content="Basith Mohamed · Analytics">
+    <meta property="og:description" content="Analytics engineer in New York City.">
+    <meta property="og:image" content="https://basith-md.github.io/portfolio/assets/images/profile.jpg">
+    <meta property="og:url" content="https://basith-md.github.io/portfolio/wikia/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+<div class="page">
+
+    <div class="top">
+        <span>New York City</span>
+        <nav>
+            <a href="#story">Story</a>
+            <a href="#work">The work</a>
+            <a href="#record">Record</a>
+            <a href="#contact">Contact</a>
+            <a href="gallery.html">Photos</a>
+        </nav>
+    </div>
+
+    <header class="title">
+        <h1>Basith Mohamed</h1>
+    </header>
+
+    <h2 id="story">Story</h2>
+    <div class="story">
+        <aside class="facts">
+            <a class="pic" href="gallery.html"><img src="../assets/images/profile.jpg" alt="Basith Mohamed"><span>More photos</span></a>
+        </aside>
+
+        <p>I'm an analytics engineer. I build the data platforms and detection systems that tell teams when something is off.</p>
+        <p>At Thorogood I led one of four workstreams on a finance controls platform for a Fortune 500 FMCG company, building pipelines across 20+ sources, and built anomaly detection on 30+ business KPIs. Before that, as a business process analyst at Lal PathLabs, I built automation that cut instrument downtime 15% across a diagnostics network serving 26.7 million patients a year.</p>
+        <p>At UMass Amherst I studied decision analytics: turning what the data says into a decision someone can act on. Recent work includes a map of what it costs to get around New York, a map of the money behind the 2026 midterms, and a tool that analyses any CSV in the browser.</p>
+        <p>It started with controls engineering at NIT Trichy, where everything is a feedback loop: measure the system, notice when it drifts, correct it. That's still how I approach data.</p>
+        <p>Based in NYC and open to analytics and AI roles.</p>
+    </div>
+
+    <h2 id="work">The work</h2>
+    <ol class="refs">
+        <li id="r1">
+            <b>Reach NYC</b><span class="kind">Geospatial analysis</span>
+            <figure class="thumb"><a href="https://reach-nyc.vercel.app" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/reach-nyc.png" alt="Reach NYC: time and money budget controls over a map of New York City" loading="lazy"></a></figure>
+            <p>Drop a pin anywhere in New York City and see everywhere you can reach within a time or money budget, with each of 46,792 hexagons coloured by the cheapest way there. It mixes subway, buses, regional rail, ferries, Citi Bike, taxis and Uber, with real fares including OMNY's weekly cap. A city-wide simulation maps where transit gives a lot for little and where the gaps are.</p>
+            <p class="meta">Python, GTFS, NYC TLC trip records, H3, TypeScript<a href="https://github.com/basith-md/reach-nyc" target="_blank" rel="noopener">code</a><a href="https://reach-nyc.vercel.app" target="_blank" rel="noopener">live</a></p>
+        </li>
+        <li id="r2">
+            <b>2026 Midterm Money Map</b><span class="kind">Data visualization</span>
+            <figure class="thumb"><a href="https://basith-md.github.io/VoterDataPub/" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/midterm-money.png" alt="Map of the money spent to elect each 2026 Senate winner, by state" loading="lazy"></a></figure>
+            <p>An interactive map of the money behind all 470 U.S. Senate and House races in 2026: what it cost to elect each winner, the spend per vote, and whether outspending the opponent moved voters compared with the 2024 presidential result. A Python pipeline pulls spending from the FEC's OpenFEC API, and the page is plain JavaScript with D3.</p>
+            <p class="meta">Python, D3, OpenFEC API, data visualization<a href="https://github.com/basith-md/VoterDataPub" target="_blank" rel="noopener">code</a><a href="https://basith-md.github.io/VoterDataPub/" target="_blank" rel="noopener">live</a></p>
+        </li>
+        <li id="r3">
+            <b>Audit Control Analytics</b><span class="kind">Thorogood</span>
+            <figure class="thumb"><img src="../assets/images/audit-control.jpg" alt="Financial line charts on a dark monitor" loading="lazy"></figure>
+            <p>A finance controls platform for a Fortune 500 FMCG company. I led one of its four streams, building pipelines across 20+ sources in Databricks, Azure Data Factory and Delta Lake to surface data quality issues and operational risk. Two automations I built cut the monthly refresh time by 35%.</p>
+            <p class="meta">Databricks, Azure Data Factory, Delta Lake, Azure Analysis Services</p>
+        </li>
+        <li id="r4">
+            <b>KPI Anomaly Detection</b><span class="kind">Thorogood</span>
+            <figure class="thumb"><img src="../assets/images/kpi-anomaly.jpg" alt="Monitoring dashboard with KPI tiles and trend lines" loading="lazy"></figure>
+            <p>Automated anomaly detection across 30+ business KPIs, built on Snowflake and dbt with statistical scoring. Alerts and NLP-generated insight summaries reached teams across the business.</p>
+            <p class="meta">Snowflake, dbt, statistics, NLP</p>
+        </li>
+        <li id="r5">
+            <b>Tabular Autopilot</b><span class="kind">ML product · demo</span>
+            <figure class="thumb"><a href="https://basith-md.github.io/tabular-autopilot/" target="_blank" rel="noopener" title="Open the live demo"><img src="../assets/images/project3.jpg" alt="Tabular Autopilot" loading="lazy"></a></figure>
+            <p>Drop in a CSV and get a full analysis, from cleaning and feature engineering to model comparison and diagnostics. The Python engine runs entirely in the browser via WebAssembly, so the data never leaves your machine. Best results: R² 0.825 on California Housing and 0.838 ROC-AUC on Titanic.</p>
+            <p class="meta">Python, scikit-learn, WebAssembly, Pyodide<a href="https://github.com/basith-md/tabular-autopilot" target="_blank" rel="noopener">code</a><a href="https://basith-md.github.io/tabular-autopilot/" target="_blank" rel="noopener">live</a></p>
+        </li>
+        <li id="r6">
+            <b>Member Interest Analysis</b><span class="kind">Analytics &amp; BI</span>
+            <figure class="thumb"><img src="../assets/images/member-interest.jpg" alt="Power BI dashboard of relative interest in telematics by city and state" loading="lazy"></figure>
+            <p>Virginia Tech Business Analytics &amp; AI capstone with a national mobility engineering association. Combined 12,597 event and membership records with Google Trends and scraped Udemy course data to map which engineering topics members want, by state and city, and forecast interest in a Power BI dashboard.</p>
+            <p class="meta">Python, Selenium, Google Trends, Power BI<a href="https://github.com/basith-md/member-interest-analysis" target="_blank" rel="noopener">code</a></p>
+        </li>
+        <li id="r7">
+            <b>Air Quality Index Prediction</b><span class="kind">Statistics &amp; ML</span>
+            <figure class="thumb"><img src="../assets/images/aqi-heatmap.jpg" alt="Correlation heatmap of pollutants and AQI" loading="lazy"></figure>
+            <p>Class term project for Virginia Tech's Business Analytics &amp; AI program. Cleaned and explored five years of pollutant data across 26 Indian cities, then compared five models across four datasets and three train/test splits.</p>
+            <p class="meta">Python, pandas, scikit-learn, EDA<a href="https://github.com/basith-md/air-quality-index-prediction" target="_blank" rel="noopener">code</a></p>
+        </li>
+        <li id="r8">
+            <b>Time Series: All I Want for Christmas Is You</b><span class="kind">Statistics &amp; forecasting</span>
+            <figure class="thumb"><img src="../assets/images/time-series.png" alt="Google Trends spikes for All I Want for Christmas Is You, 2004 to 2025" loading="lazy"></figure>
+            <p>A small (and fun) time series analysis of Mariah Carey's All I Want for Christmas Is You, using Google Trends data from 2004 to the present. It examines long-term trend and seasonality, and compares classical regression and autoregressive models in R.</p>
+            <p class="meta">R, time series, forecasting, data visualization<a href="https://github.com/basith-md/Time-Series-Analysis-in-R" target="_blank" rel="noopener">code</a></p>
+        </li>
+    </ol>
+
+    <h2 id="record">Record</h2>
+    <h3>Experience</h3>
+    <ul class="rec">
+        <li><span class="when">2022 – 2024 · Bengaluru</span><b>Data &amp; Analytics Engineer, Thorogood Associates.</b> Led one of four streams of a finance controls platform for a Fortune 500 FMCG company. Built anomaly detection on 30+ KPIs for global teams. Received the Passion and Star awards.</li>
+        <li><span class="when">2021 – 2022 · New Delhi</span><b>Business Process Analyst, Lal PathLabs.</b> Built automation systems that cut instrument downtime 15% and technician workload 90% across a diagnostics network serving 26.7M patients a year.</li>
+    </ul>
+    <h3>Internship</h3>
+    <ul class="rec">
+        <li><span class="when">2020 · New Delhi</span><b>Robotics Intern, SenseGrass.</b> Modeled faulty telemetry from an agricultural soil-sampling rover.</li>
+    </ul>
+    <h3>Education</h3>
+    <ul class="rec">
+        <li><span class="when">2024 – 2026</span><b>M.S. Engineering Management, Decision Analytics.</b> University of Massachusetts Amherst · GPA 3.94</li>
+        <li><span class="when">2017 – 2021</span><b>Bachelor's, Instrumentation &amp; Control Engineering.</b> NIT Tiruchirappalli · Final-year project: <a href="https://github.com/basith-md/Corticomuscular-Coherence-Analysis-Using-Wavelet-Coherence-Method-Based-On-Leg-Movements" target="_blank" rel="noopener">brain–muscle signal coherence during leg movement</a></li>
+    </ul>
+    <h3>Tools</h3>
+    <dl class="skills">
+        <dt>Data</dt><dd>SQL, Python, Scala · Databricks, Azure Data Factory, Delta Lake · Snowflake, dbt</dd>
+        <dt>ML &amp; statistics</dt><dd>scikit-learn, R · anomaly detection · time series and forecasting · model evaluation and diagnostics</dd>
+        <dt>Visualization</dt><dd>Power BI · D3 · maps with H3 and TopoJSON</dd>
+        <dt>Shipping</dt><dd>JavaScript · WebAssembly (Pyodide) · Vercel, GitHub Pages</dd>
+    </dl>
+
+    <h2 id="contact">Contact</h2>
+    <div class="contact">
+        <p>I'm open to analytics and AI roles. If you're hiring, or you have a messy data problem worth solving, reach out.</p>
+        <ul>
+            <li><a href="mailto:Basithsmohd+3@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/basith-mohamed/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/basith-md" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <span>&copy; 2026 Basith Mohamed</span>
+        <span>New York City</span>
+    </footer>
+
+</div>
+</body>
+</html>
